@@ -22,14 +22,13 @@ def run_experiment(interval, ram=100, cpu=1, instr=3):
                  f"Intervalo {interval} | RAM {ram} | CPU {cpu}")
 
 if __name__ == "__main__":
-    # Caso base
+
     run_experiment(interval=10)
 
-    # Intervalos más rápidos
     run_experiment(interval=5)
     run_experiment(interval=1)
 
-    # Estrategias de mejora
     run_experiment(interval=10, ram=200)
     run_experiment(interval=10, instr=6)
+
     run_experiment(interval=10, cpu=2)
